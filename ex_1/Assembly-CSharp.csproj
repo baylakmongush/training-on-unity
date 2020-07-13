@@ -36,11 +36,14 @@
     <ImplicitlyExpandDesignTimeFacades>false</ImplicitlyExpandDesignTimeFacades>
   </PropertyGroup>
   <ItemGroup>
-     <Compile Include="Assets\Scripts\MoveClouds.cs" />
-     <Compile Include="Assets\Scripts\MoveMan.cs" />
-     <Compile Include="Assets\Scripts\SpawnClouds.cs" />
-     <Compile Include="Assets\Scripts\SpawnFlower.cs" />
-     <Compile Include="Assets\Scripts\flowermove.cs" />
+     <Compile Include="Assets\Scripts\GameOverScene\Exit.cs" />
+     <Compile Include="Assets\Scripts\Player\Bomb.cs" />
+     <Compile Include="Assets\Scripts\Player\BombSpawner.cs" />
+     <Compile Include="Assets\Scripts\Player\FlowerMove.cs" />
+     <Compile Include="Assets\Scripts\Player\MoveClouds.cs" />
+     <Compile Include="Assets\Scripts\Player\MoveMan.cs" />
+     <Compile Include="Assets\Scripts\Player\SpawnClouds.cs" />
+     <Compile Include="Assets\Scripts\Player\SpawnFlower.cs" />
     <Reference Include="UnityEngine">
         <HintPath>/Applications/Unity/Unity.app/Contents/Managed/UnityEngine/UnityEngine.dll</HintPath>
     </Reference>
