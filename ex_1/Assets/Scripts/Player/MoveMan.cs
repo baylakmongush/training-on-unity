@@ -1,15 +1,21 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class MoveMan : MonoBehaviour
 {
     Animator anim;
+    AudioSource audio_Flower;
     float speed = 5f;
+    Text        score;
+    int         score_count;
     // Start is called before the first frame update
     void Start()
     {
         anim = gameObject.GetComponent<Animator>();
+        score = GameObject.FindWithTag("score").GetComponent<Text>();
+        audio_Flower = GetComponent<AudioSource>();
     }
     // Update is called once per frame
     void Update()
@@ -29,6 +35,21 @@ public class MoveMan : MonoBehaviour
         else
             anim.SetBool("walk", false);
         transform.position = this.ScreenWrapper(position);
+    }
+
+     public void Score_update()
+    {
+        score_count += 1;
+        score.text = "Score: " + score_count;
+    }
+    void OnCollisionEnter2D(Collision2D otherObj)
+    {
+        if (otherObj.gameObject.tag.Equals("flower"))
+        {
+            audio_Flower.Play();
+            Score_update();
+            Destroy(GameObject.FindGameObjectWithTag("flower"));
+        }
     }
 
     private Vector3 ScreenWrapper(Vector3 position)

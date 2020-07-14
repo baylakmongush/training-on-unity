@@ -695,6 +695,6 @@ ScriptsOnlyBuild:
     className: PlayableTrack
   platform: 2
   scenePathNames:
-  - Assets/Scenes/gameover.unity
   - Assets/Scenes/scene0.unity
+  - Assets/Scenes/gameover.unity
   playerPath: /Users/npetrell/Desktop/prototipe_1.app
