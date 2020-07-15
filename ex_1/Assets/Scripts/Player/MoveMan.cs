@@ -9,13 +9,20 @@ public class MoveMan : MonoBehaviour
     AudioSource audio_Flower;
     float speed = 5f;
     Text        score;
+    Text        high_score;
     int         score_count;
+    int         high_score_count;
     // Start is called before the first frame update
     void Start()
     {
         anim = gameObject.GetComponent<Animator>();
         score = GameObject.FindWithTag("score").GetComponent<Text>();
+        high_score = GameObject.FindWithTag("high_score").GetComponent<Text>();
         audio_Flower = GetComponent<AudioSource>();
+        if (high_score_count == null)
+            PlayerPrefs.SetInt("high_score", 0);
+        high_score_count = PlayerPrefs.GetInt("high_score");
+        high_score.text = "High score: " + high_score_count;
     }
     // Update is called once per frame
     void Update()
@@ -52,6 +59,12 @@ public class MoveMan : MonoBehaviour
         {
             audio_Flower.Play();
             Score_update();
+            PlayerPrefs.SetInt("player_score", score_count);
+            if (score_count > high_score_count)
+            {
+                high_score.GetComponent<AudioSource>().Play();
+                PlayerPrefs.SetInt("high_score", score_count);
+            }
             Destroy(GameObject.FindGameObjectWithTag("flower"));
         }
     }

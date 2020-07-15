@@ -9,6 +9,7 @@ TagManager:
   - man
   - score
   - bomb
+  - high_score
   layers:
   - Default
   - TransparentFX
