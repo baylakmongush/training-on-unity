@@ -25,15 +25,19 @@ public class MoveMan : MonoBehaviour
         if (horiz < 0)
         {
             position.x += Time.deltaTime * speed * horiz;
+            anim.SetBool("direction", false);
             anim.SetBool("walk", true);
         }
-        else if (horiz > 0)
+        else if (horiz == 0)
+            anim.SetBool("walk", false);
+        if (horiz > 0)
         {
             position.x += Time.deltaTime * speed * horiz;
-            anim.SetBool("walk", true);
+            anim.SetBool("direction", true);
+            anim.SetBool("walk_right", true);
         }
-        else
-            anim.SetBool("walk", false);
+        else if (horiz == 0)
+            anim.SetBool("walk_right", false);
         transform.position = this.ScreenWrapper(position);
     }
 
