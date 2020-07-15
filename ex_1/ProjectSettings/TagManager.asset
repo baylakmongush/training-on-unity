@@ -8,6 +8,7 @@ TagManager:
   - flower
   - man
   - score
+  - bomb
   layers:
   - Default
   - TransparentFX

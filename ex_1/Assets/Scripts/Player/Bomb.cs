@@ -6,7 +6,7 @@ using UnityEngine.SceneManagement;
 public class Bomb : MonoBehaviour
 {
     Rigidbody2D rigidbody;
-    float       thrust = 0.5f;
+    static float       thrust = 0.5f;
 
     // Start is called before the first frame update
     void Start()
@@ -27,6 +27,13 @@ public class Bomb : MonoBehaviour
         {
             Destroy(gameObject);
             SceneManager.LoadScene("gameover", LoadSceneMode.Single);
+        }
+    }
+
+    public float Thrust {
+        get => thrust;
+        set {
+            thrust = value;
         }
     }
 }

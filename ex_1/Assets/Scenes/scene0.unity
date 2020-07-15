@@ -251,7 +251,7 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
+  m_Offset: {x: -0.16596052, y: 0}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -262,7 +262,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 1.22, y: 2.54}
+  m_Size: {x: 0.57124525, y: 2.54}
   m_EdgeRadius: 0
 --- !u!82 &295882799
 AudioSource:
@@ -284,7 +284,7 @@ AudioSource:
   SpatializePostEffects: 0
   Priority: 128
   DopplerLevel: 1
-  MinDistance: 1
+  MinDistance: 0.9622817
   MaxDistance: 500
   Pan2D: 0
   rolloffMode: 0
@@ -503,9 +503,9 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 8300000, guid: f93c04ea2c78742e4b2d2d53b5fffa6b, type: 3}
+  m_audioClip: {fileID: 8300000, guid: ac89aeec4a10c4d23889fb7c9ec89a15, type: 3}
   m_PlayOnAwake: 1
-  m_Volume: 0.484
+  m_Volume: 0.141
   m_Pitch: 1
   Loop: 1
   Mute: 0
@@ -579,7 +579,7 @@ AudioSource:
     m_Curve:
     - serializedVersion: 3
       time: 0
-      value: 1
+      value: 1.1
       inSlope: 0
       outSlope: 0
       tangentMode: 0
@@ -625,7 +625,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.78349996, y: 0.026667748}
   m_AnchorMax: {x: 0.99000007, y: 0.07849734}
-  m_AnchoredPosition: {x: 0.9000244, y: 1.0799866}
+  m_AnchoredPosition: {x: 0.89990234, y: 1.0800781}
   m_SizeDelta: {x: -1.1005554, y: -0.17829132}
   m_Pivot: {x: 1, y: 0}
 --- !u!114 &1119925350
