@@ -38,11 +38,13 @@
   <ItemGroup>
      <Compile Include="Assets\Scripts\GameOverScene\Exit.cs" />
      <Compile Include="Assets\Scripts\GameOverScene\ScorText.cs" />
+     <Compile Include="Assets\Scripts\Menu.cs" />
      <Compile Include="Assets\Scripts\Player\Bomb.cs" />
      <Compile Include="Assets\Scripts\Player\BombSpawner.cs" />
      <Compile Include="Assets\Scripts\Player\FlowerMove.cs" />
      <Compile Include="Assets\Scripts\Player\MoveClouds.cs" />
      <Compile Include="Assets\Scripts\Player\MoveMan.cs" />
+     <Compile Include="Assets\Scripts\Player\Pause.cs" />
      <Compile Include="Assets\Scripts\Player\SpawnClouds.cs" />
      <Compile Include="Assets\Scripts\Player\SpawnFlower.cs" />
     <Reference Include="UnityEngine">

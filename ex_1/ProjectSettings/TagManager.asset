@@ -10,6 +10,7 @@ TagManager:
   - score
   - bomb
   - high_score
+  - pause
   layers:
   - Default
   - TransparentFX
